@@ -260,7 +260,7 @@
         return s;
     }
 
-    var black = "stroke:#FFFFFF; fill: #000000";
+    var base = "stroke:#FFFFFF; fill: #ABCCBA";
     var blue = "stroke:#FFFFFF; fill: #0000FF";
     var green = "stroke:#FFFFFF; fill: #00CC00";
     var red = "stroke:#FFFFFF; fill: #FF0000";
@@ -287,7 +287,7 @@
     function Metric(ns, boxType, displayString, div, optionalSuffix) {
         this.ns = ns;
         if (boxType == "ns") {
-          this.color = black;
+          this.color = base;
           this.boxes = ns;
           this.nsDisplay = addCommas(ns);
           this.alternateUnit = "";
